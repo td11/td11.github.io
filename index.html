@@ -1,0 +1,58 @@
+<!DOCTYPE html>
+<html lang="es">
+
+<head>
+    <meta http-equiv="Content-Type" content="text/html; charset=utf-8"/>
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="icon" href="https://v4-alpha.getbootstrap.com/favicon.ico">
+    <link href="bootstrap/css/bootstrap.css" rel="stylesheet">
+    <link rel="stylesheet" href="CSS/estilos.css">
+    <title>Mapas</title>
+</head>
+
+<body>
+
+    <div class="container">
+        <div id="formulario">
+            <div id="toggle">
+                <h2 id="titulo">Busqueda</h2>
+                <div id="cajaToggle">
+                    <span id="ciclos">Ciclos</span>
+                    <div id="botontoggle">
+                        <label class="switch">
+                            <input id="checkboxCicloPais" type="checkbox">
+                            <span class="slider"></span>
+                        </label>
+                    </div>
+                    <span id="pais">Paises</span>
+                </div>
+                <div id="cajaMovilidad">
+                    <label for="movilidad">Seleccionar tipo de filtro</label>
+                    <select name="select" id="select" class="selectpicker" data-style="btn-primary">
+                        <option>Seleccionar..</option>
+                        <option value="Grado Medio">Grado Medio</option>
+                        <option value="Grado Superior">Grado Superior</option>
+                        <option value="Profesorado">Profesores</option>
+                        <option value="Todos">Todos</option>
+                    </select>
+                </div>
+            </div>
+
+            <div id="checkboxGrupo">
+
+            </div>
+
+            <input type="button" class="btn btn-primary" id="btnBuscar" value="Buscar">
+            <input type="button" class="btn btn-primary" id="btnMarcarTodo" value="Marcar todos">
+            <input type="button" class="btn btn-primary" id="btnDesmarcarTodo" value="Desmarcar todos">
+            <input type="button" class="btn btn-primary" id="btnLimpiar" value="Limpiar marcadores">
+
+        </div>
+        <div id="googleMap" style="width:100%;height:400px;"></div>
+    </div>
+    <script src="JS/javascript.js"></script>
+    <script src="https://maps.googleapis.com/maps/api/js?key=AIzaSyAaVhIHr6lnNnDpEjmgRG28uYQzyP-emTA&callback=myMap"></script>
+
+</body>
+
+</html>
