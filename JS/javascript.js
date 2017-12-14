@@ -210,7 +210,7 @@ function asignarMarcadores() {
         //Paises
         if (estadoDelCheck && checked) {
 
-            for (var item in yeison) {
+            for (var item in datosjson) {
 
                 if (textoSpan === datosjson[item].pais && datosjson[item].tipo === inputCiclo) {
 
