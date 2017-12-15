@@ -24,11 +24,6 @@ body {
     font-size: 3rem;
 }
 
-.Check {
-
-    width: 20px;
-    height: 20px;
-}
 
 #cajaToggle {
     padding-top: 30px;
@@ -46,6 +41,16 @@ body {
     padding: 10px;
     font-size: 1.9rem;
 
+}
+
+#checkboxGrupo{
+    padding: 1em;
+    margin: 1em;
+    border: 1px groove white;
+}
+
+#checkboxGrupo input{
+    float:left;
 }
 
 .switch {
@@ -99,4 +104,8 @@ input:checked + .slider:before {
     transform: translateX(26px);
 }
 
+.checkBoxCiclosPaises {
 
+    width: 2em;
+    height: 1em;
+}

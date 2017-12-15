@@ -1,5 +1,4 @@
 var datosjson;
-var datosjson2 = "";
 var infowindow = [];
 var marcador = [];
 var listaPaises = [];
@@ -17,26 +16,22 @@ inicio();
 
 function inicio() {
 
-    listaPaises = [];
-    listaTipos = [];
-    listaCiclos = [];
-
-    ciclosGS = [];
-    ciclosGM = [];
-    ciclosProfes = [];
-
-    paisGS = [];
-    paisGM = [];
-    paisProfes = [];
-
     llenarArrays();
     asignarEventos();
 }
 
+/* Cargamos el mapa */
+function myMap() {
+    infowindow = new google.maps.InfoWindow();
+    var mapProp = {
+        center: new google.maps.LatLng(49.3704187, 14.9236875),
+        zoom: 4,
+    };
+    map = new google.maps.Map(document.getElementById("googleMap"), mapProp);
+}
 
-/**
- * Cargar json y parsear los datos
- */
+
+/** Cargar json y parsear los datos */
 function cargaDatos() {
 
     var xmlhttp = new XMLHttpRequest();
@@ -48,24 +43,8 @@ function cargaDatos() {
     xmlhttp.send();
 }
 
-
-/**
- *   Cargar los arrays con los datos del json 
- */
+/** Cargar los arrays con los datos del json */
 function llenarArrays() {
-
-    listaPaises = [];
-    listaTipos = [];
-    listaCiclos = [];
-
-    ciclosGS = [];
-    ciclosGM = [];
-    ciclosProfes = [];
-
-    paisGS = [];
-    paisGM = [];
-    paisProfes = [];
-
     for (var item in datosjson) {
         if (!listaPaises.includes(datosjson[item].pais)) {
             listaPaises.push(datosjson[item].pais);
@@ -97,9 +76,32 @@ function llenarArrays() {
     }
 }
 
-/**
-    Cargar eventos
-*/
+/**Generico para crear nodos*/
+function generarNodo(tipo, texto, atributo, valores) {
+
+    var nodoTexto;
+    var nodoP = document.createElement(tipo);
+    if (texto) {
+        nodoTexto = document.createTextNode(texto);
+        nodoP.appendChild(nodoTexto);
+    }
+    for (var i in atributo) {
+        nodoP.setAttribute(atributo[i], valores[i]);
+    }
+    return nodoP;
+}
+
+/**Generico para borrar elementos */
+function borrarTodos(elem) {
+
+    var elements = document.getElementsByClassName(elem);
+
+    while (elements.length > 0) {
+        elements[0].parentNode.removeChild(elements[0]);
+    }
+}
+
+/** Cargar eventos */
 function asignarEventos() {
     document.getElementById("select").addEventListener("change", mostrarLosCiclos, false);
     document.getElementById("checkboxCicloPais").addEventListener("change", mostrarLosCiclos, false);
@@ -109,7 +111,7 @@ function asignarEventos() {
     //Marcar todos
     document.getElementById("btnMarcarTodo").addEventListener("click", function () {
 
-        var todosLosCheckbox = document.getElementsByClassName("Check");
+        var todosLosCheckbox = document.getElementsByClassName("checkboxCiclosPaises");
 
         for (var i = 0; i < todosLosCheckbox.length; i++) {
             todosLosCheckbox[i].checked = true;
@@ -120,12 +122,30 @@ function asignarEventos() {
     //Desmarcar todos
     document.getElementById("btnDesmarcarTodo").addEventListener("click", function () {
 
-        var todosLosCheckbox = document.getElementsByClassName("Check");
+        var todosLosCheckbox = document.getElementsByClassName("checkboxCiclosPaises");
         for (var i = 0; i < todosLosCheckbox.length; i++) {
             todosLosCheckbox[i].checked = false;
         }
     });
 
+}
+
+/* Imprimir checkboxs en el html dependiendo de las opciones escogidas */
+function dibujarCheckBoxs(listaCheckbox) {
+    borrarTodos("elecciones");
+    borrarTodos("checkboxCiclosPaises");
+
+    var divChecks = document.getElementById("checkboxGrupo");
+    for (var i = 0; i < listaCheckbox.length; i++) {
+
+        var span = generarNodo("span", listaCheckbox[i], ["class"], ["elecciones"]);
+        var check = generarNodo("input", "", ["class", "type"], ["checkboxCiclosPaises", "checkbox"]);
+
+        var br = generarNodo("br", "", [], []);
+        divChecks.appendChild(span);
+        span.appendChild(check);
+        span.appendChild(br);
+    }
 }
 
 /* Cargar los checkbox dependiendo de la seleccion del usuario */
@@ -173,32 +193,14 @@ function comprobarSeleccion(seleccion) {
     }
 }
 
-/* Imprimir checkboxs en el html dependiendo de las opciones escogidas*/
-function dibujarCheckBoxs(listaCheckbox) {
-    borrarTodos("spanCheck");
-    borrarTodos("Check");
-
-    var divChecks = document.getElementById("checkboxGrupo");
-    for (var i = 0; i < listaCheckbox.length; i++) {
-
-        var span = generarNodo("span", listaCheckbox[i], ["class"], ["spanCheck"]);
-        var check = generarNodo("input", "", ["class", "type"], ["Check", "checkbox"]);
-
-        var br = generarNodo("br", "", [], []);
-        divChecks.appendChild(span);
-        span.appendChild(check);
-        span.appendChild(br);
-    }
-}
-
 function mostrarLosCiclos() {
     comprobarSeleccion(document.getElementById("select").value);
 }
 
-/* Asignar los marcadores */
+/* Asignar los marcadores generados */
 function asignarMarcadores() {
     var checked = document.getElementById("checkboxCicloPais").checked;
-    var listaCheckbox = document.getElementsByClassName("spanCheck");
+    var listaCheckbox = document.getElementsByClassName("elecciones");
 
     for (var i = 0; i < listaCheckbox.length; i++) {
 
@@ -322,37 +324,3 @@ function generarMarcadores(posicion, html) {
     marcador.push(nuevomarcador);
 }
 
-/**Generico para crear nodos*/
-function generarNodo(tipo, texto, atributo, valores) {
-
-    var nodoTexto;
-    var nodoP = document.createElement(tipo);
-    if (texto) {
-        nodoTexto = document.createTextNode(texto);
-        nodoP.appendChild(nodoTexto);
-    }
-    for (var i in atributo) {
-        nodoP.setAttribute(atributo[i], valores[i]);
-    }
-    return nodoP;
-}
-
-/**Generico para borrar elementos */
-function borrarTodos(elem) {
-
-    var elements = document.getElementsByClassName(elem);
-
-    while (elements.length > 0) {
-        elements[0].parentNode.removeChild(elements[0]);
-    }
-}
-
-/* cargamos el mapa */
-function myMap() {
-    infowindow = new google.maps.InfoWindow();
-    var mapProp = {
-        center: new google.maps.LatLng(49.3704187, 14.9236875),
-        zoom: 4,
-    };
-    map = new google.maps.Map(document.getElementById("googleMap"), mapProp);
-}
