@@ -17,29 +17,30 @@ body {
 }
 
 #cajaMovilidad{
-    font-size: 1em;
+    font-size: 0.9em;
 }
 
 #titulo {
-    font-size: 3rem;
+    font-size: 2em;
 }
 
 
 #cajaToggle {
-    padding-top: 30px;
-    width: 52%;
+    padding-top: 1em;
+    width: 40%;
     display: flex;
 }
 
 #botontoggle {
-    padding: 20px;
-    padding-top: 0px;
+    padding: 1em;
+    padding-top: 0;
+    padding-bottom: 0;
 }
 
 #toggle {
 
-    padding: 10px;
-    font-size: 1.9rem;
+    padding: 1em;
+    font-size: 1.5em;
 
 }
 
