@@ -2,7 +2,7 @@
   "Global": {
     "path": "/",
     "coverflowWidth": "1200",
-    "coverflowHeight": "450",
+    "coverflowHeight": "600",
     "backgroundColor": "",
     "imageWidth": "250",
     "imageHeight": "200",
@@ -33,7 +33,7 @@
     "thumbColor": "#f2f2f2",
     "borderRadius": "10",
     "arrows": false,
-    "marginTop": "330"
+    "marginTop": "450"
   },
   "Shadow": {
     "imageShadows": true,
@@ -46,7 +46,7 @@
     "autoPlay": false,
     "pauseDelay": "3000",
     "controllerSkin": "light",
-    "controllerMarginTop": "380",
+    "controllerMarginTop": "400",
     "preloaderMarginTop": "1",
     "preloaderMarginLeft": "62"
   },

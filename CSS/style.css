@@ -1,6 +1,6 @@
 #coverflow {
 	max-width: 1200px;
-	height: 450px;
+	height: 600px;
 	background: rgba(0, 0, 0, 0);
 	position: relative;
 	margin: 0 auto;
@@ -81,7 +81,7 @@
 #coverflow .text {
 	position: absolute;
 	bottom: -50px;
-	top: 184px;
+	top: 260px;
 	-moz-box-sizing: border-box;
 	box-sizing: border-box;
 	-webkit-transition: opacity 0.5s;
