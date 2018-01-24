@@ -2,68 +2,69 @@
   "Images": [
     {
       "imageURL": "img/blade-runner-2049.jpg",
-      "target": "_blank",
-      "link": "http://www.example.com",
+      "target": "lightbox",
+      "link": "img/blade-runner-2049.jpg",
       "text": "<p>Blade Runner 2049</p>"
     },
     {
       "imageURL": "img/john.jpg",
       "target": "lightbox",
       "link": "img/john.jpg",
-      "text": "<p>The text over the images is optional <br> and it is <span style=\"color: #f55; font-weight: bold; font-size: 20px;\">CSS</span><span style=\"color: yellow; font-style: italic;\">formatted</span></p>",
+      "text": "<p>John Wick 2</p>",
       "lightboxCaption": "lightbox caption 02"
     },
     {
-      "imageURL": "img/03-bridge¡.jpg",
+      "imageURL": "img/jumanji.jpg",
       "target": "lightbox",
-      "link": "img/03-bridge.jpg",
-      "text": "<p>You can also have <a href=\"http://www.example.com\" target=\"_blank\" style=\"color: #00a;\">links</a></p>",
+      "link": "img/jumanji.jpg",
+      "text": "<p>Jumanji</p>",
       "lightboxCaption": "lightbox caption 03"
     },
     {
-      "imageURL": "img/04-china.jpg",
-      "target": "none",
-      "text": ""
+      "imageURL": "img/justiceleague.jpg",
+      "target": "lightbox",
+      "link": "img/justiceleague.jpg",
+      "text": "<p>La liga de la justicia</p>"
     },
     {
-      "imageURL": "img/05-camera.jpg",
+      "imageURL": "img/kingarthur.jpg",
       "target": "lightbox",
-      "link": "img/05-camera.jpg",
-      "text": "<p>This is a new CSS Jquery Coverflow.</p><p>Install it for free on your website</p>",
+      "link": "img/kingarthur.jpg",
+      "text": "<p>El rey Arturo</p>",
       "lightboxCaption": "lightbox caption 05"
     },
     {
-      "imageURL": "img/06-free.jpg",
+      "imageURL": "img/logan.jpg",
       "target": "lightbox",
-      "link": "img/06-free.jpg",
-      "text": "<p>Works great on iPhone and iPad</p><p>with tap and swipe movements</p>",
+      "link": "img/logan.jpg",
+      "text": "<p>Logan</p>",
       "lightboxCaption": "lightbox caption 06"
     },
     {
-      "imageURL": "img/07-joy.jpg",
+      "imageURL": "img/mazinger.jpg",
       "target": "lightbox",
-      "link": "img/07-joy.jpg",
-      "text": "<p>The Coverflow is responsive</p><p>Narrow the width of your browser to see</p>",
+      "link": "img/mazinger.jpg",
+      "text": "<p>Mazinger Z</p>",
       "lightboxCaption": "lightbox caption 07"
     },
     {
-      "imageURL": "img/08-feet.jpg",
+      "imageURL": "img/starwars.jpg",
       "target": "lightbox",
-      "link": "img/08-feet.jpg",
-      "text": "<p>Clicking on this image</p><p>Will open a lightbox with a bigger image</p>",
+      "link": "img/starwars.jpg",
+      "text": "<p>Star Wars El Ultimo Jedi</p>",
       "lightboxCaption": "lightbox caption 08"
     },
     {
-      "imageURL": "img/09-girl.jpg",
-      "target": "_blank",
-      "link": "http://www.example.com",
-      "text": "<p>Clicking on this image</p><p>Will take you to an external link</p>"
+      "imageURL": "img/thor.jpg",
+      "target": "lightbox",
+      "link": "img/thor.jpg",
+      "text": "<p>Thor Ragnarok</p>"
     },
     {
-      "imageURL": "img/10-beach.jpg",
+      "imageURL": "img/valerian.jpg",
       "target": "lightbox",
-      "link": "img/10-beach.jpg",
-      "text": "<p>But it could also take you to a link inside your web page</p>",
+      "link": "img/valerian.jpg",
+      "text": "<p>Valerian</p>",
       "lightboxCaption": "lightbox caption 10"
     }
   ]
