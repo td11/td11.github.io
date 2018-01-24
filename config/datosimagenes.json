@@ -43,17 +43,14 @@
       "fecha":"15 de diciembre de 2017"
     },
     {
-      "imageURL": "img/thor.jpg",
-      "target": "lightbox",
-      "link": "img/thor.jpg",
-      "text": "<p>Thor Ragnarok</p>"
+      "titulo":"Thor Ragnarok",
+      "sinopsis":"Asgard se encuentra en manos de una poderosa amenaza, la despiadada y todopoderosa Hela (Cate Blanchett), que ha robado el trono y ha encarcelado a Thor (Chris Hemsworth), enviándole como prisionero hasta el otro extremo de la galaxia. Sin su martillo, el mítico y poderoso Mjölnir, el Dios del Trueno se encontrará a sí mismo en una carrera contra el tiempo.En el planeta Sakaar, Thor tendrá que luchar por su vida como un gladiador. Para escapar de su cautiverio, Thor tendrá que resultar vencedor en una competición alienígena, y derrotar a su antiguo aliado y amigo Vengador El increíble Hulk (Mark Ruffalo). Pero, por alguna misteriosa razón, Hulk no recuerda a su compañero Vengador. Claro que, por encima de todo, el objetivo del Dios del trueno será volver a Asgard y parar el Ragnarok, un ciclo de vida y muerte sin fin que podría significar la destrucción total e inminente de la civilización asgardiana.Esta tercera entrega de la saga Thor de Marvel la dirige Taika Waititi (Lo que hacemos en las sombras, Boy). Sus protagonistas son Chris Hemsworth (Cazafantasmas, Las crónicas de Blancanieves: El Cazador y la Reina del Hielo) como el Dios del Trueno, Mark Ruffalo (Ahora me ves 2, Spotlight) como Bruce Banner/Hulk, Tom Hiddleston (El infiltrado, High-Rise) como Loki, Cate Blanchett (Carol, Blue Jasmine) como Hela, Benedict Cumberbatch (Sherlock, 12 años de esclavitud) como Dr. Stephen Strange, Idris Elba (Caza al asesino, Mandela: del mito al hombre) como Heimdall, Tessa Thompson (Creed: La leyenda de Rocky, Selma) como Valquiria, Jeff Goldblum (Independence Day: Contraataque, Mortdecai) como Grandmaster, Karl Urban (Peter y el dragón, Star Trek: Más allá) como Skurge y Anthony Hopkins (Westworld, Noé) como Odin. ",
+      "fecha":"27 de octubre de 2017"
     },
     {
-      "imageURL": "img/valerian.jpg",
-      "target": "lightbox",
-      "link": "img/valerian.jpg",
-      "text": "<p>Valerian</p>",
-      "lightboxCaption": "lightbox caption 10"
+      "titulo":"Valerian",
+      "sinopsis":"Valerian (Dane DeHaan) y Laureline (Cara Delevingne) son dos agentes especiales que se ocupan de mantener el orden en todo el universo. Su relación no es lo que se dice romántica, aunque Valerian, un seductor con un amplio historial de conquistas a sus espaldas, busca algo más que una relación profesional con su compañera y por eso persigue abiertamente a Laureline con constantes proposiciones, que ella, de carácter más tradicional, rechaza una y otra vez.El comandante Arün Filitt (Clive Owen) les envía a cumplir una importante misión en la impresionante ciudad intergaláctica de Alpha, una metrópoli en constante crecimiento en la que conviven miles de especies distintas que proceden de todos los rincones del universo. Después de siglos de paz y prosperidad en la que los diecisiete millones de habitantes de Alpha han unido sus talentos, tecnología y recursos por el bien común, una fuerza desconocida quiere poner en grave peligro la localidad y destruirla. Convertidos en los guardianes del futuro de Alpha, Valerian y Laureline disponen de menos de 10 horas para encontrar la amenaza y eliminarla. Ahora, el destino de esta ciudad y de todo el universo está en sus manos.El cineasta Luc Besson (Lucy, Arthur y la guerra de los mundos, El quinto elemento) dirige esta adaptación de los comics Valérian et Laureline de Pierre Christin y Jean-Claude Mézières. La película la protagonizan Cara Delevingne (Escuadrón Suicida, Pan: Viaje a Nunca Jamás), Dane DeHaan (La cura del bienestar, Knight of Cups), Rihanna (Motel Bates, Juerga hasta el fin), Clive Owen (The Knick, Lazos de sangre), John Goodman (Calle Cloverfield 10, Trumbo: La lista negra de Hollywood), Rutger Hauer (True Blood, Batman Begins), Ethan Hawke (Los siete magníficos, Boyhood (Momentos de una vida)) y Elizabeth Debicki (Guardianes de la galaxia Vol. 2, Operación U.N.C.L.E.). ",
+      "fecha":"18 de agosto de 2017"
     }
   ]
 }
