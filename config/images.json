@@ -2,7 +2,7 @@
   "Images": [
     {
       "imageURL": "img/blade-runner-2049.jpg",
-      "target": "lightbox",
+      "target": "none",  
       "link": "img/blade-runner-2049.jpg",
       "text": "<p>Blade Runner 2049</p>"
     },
