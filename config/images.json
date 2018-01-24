@@ -1,20 +1,20 @@
 {
   "Images": [
     {
-      "imageURL": "img/01-tunnel.jpg",
+      "imageURL": "img/blade-runner-2049.jpg",
       "target": "_blank",
       "link": "http://www.example.com",
-      "text": "<p>The text and images are easily indexed by search engines</p>"
+      "text": "<p>Blade Runner 2049</p>"
     },
     {
-      "imageURL": "img/02-couple.jpg",
+      "imageURL": "img/john.jpg",
       "target": "lightbox",
-      "link": "img/02-couple.jpg",
+      "link": "img/john.jpg",
       "text": "<p>The text over the images is optional <br> and it is <span style=\"color: #f55; font-weight: bold; font-size: 20px;\">CSS</span><span style=\"color: yellow; font-style: italic;\">formatted</span></p>",
       "lightboxCaption": "lightbox caption 02"
     },
     {
-      "imageURL": "img/03-bridge.jpg",
+      "imageURL": "img/03-bridge¡.jpg",
       "target": "lightbox",
       "link": "img/03-bridge.jpg",
       "text": "<p>You can also have <a href=\"http://www.example.com\" target=\"_blank\" style=\"color: #00a;\">links</a></p>",
